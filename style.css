@@ -6712,13 +6712,41 @@ footer .f-item.tags li a:hover {
   top: 0;
 }
 
-.se-pre-con {
+/* Back to top */
+#back-to-top{
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  background-color: rgba(255, 255, 255, .9);
+  color: #313943;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, .25);
+  transition: all .3s ease-in-out;
+  display: inline-block;
+  opacity: 0;
+  text-decoration: none;
+  font-size: .75em;
+}    
+  #back-to-top:hover{
+      background-color: #fff;
+      padding: 1em 3em;
+  }
+#back-to-top.visible{
+  opacity: 1;
+}
+
+/* .se-pre-con {
   position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(assets/img/preloader.gif) center no-repeat #fff;
+  background: url(assets/img/preloader.gif) center no-repeat rgb(39, 38, 38);
   text-align: center;
-}
+} */
