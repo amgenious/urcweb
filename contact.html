@@ -13,7 +13,7 @@
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicn.png" type="image/x-icon">
-
+ 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -28,6 +28,13 @@
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
 
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -102,18 +109,22 @@
         <!-- Start Navigation -->
         <nav class="navbar navbar-default attr-border active-border logo-less small-pad navbar-sticky bootsnav">
 
+            <!-- Start Top Search -->
+            
+            <!-- End Top Search -->
+
             <div class="container">
 
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li ><a class="join" href="register.html" style="width: 90px; height: 40px; background-color: white; border-radius: 20px; border: 1px solid red; text-align: center;">Join Us</a></li>
+                        <li ><a class="join" href="register.html" style="width: 90px; height: 40px; background-color: white; border-radius: 20px; border: 1px solid red; text-align: center; ">Join Us</a></li>
                     </ul>
                     <ul class="social">
                         <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -133,20 +144,20 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
                         <li>
-                            <a href="index.html" class="" >Home</a>
-                            
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li>
-                            <a href="gallery.html" class="active">Gallery</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="blog.html"  >Projects</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="contact.html"  >Contact</a>
+                            <a href="gallery.html">Gallery</a>
                         </li>
-                        
+                        <li>
+                            <a href="blog.html">Project</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="active">contact</a>
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -158,152 +169,100 @@
 
     <!-- Start Page Title 
     ============================================= -->
-    <div class="page-title-area shadow dark bg-fixed text-center text-light" style="background-image: url(assets/img/bg_6.jpg);">
+    <div class="page-title-area shadow dark bg-fixed text-center text-light" style="background-image: url(assets/img/2440x1578.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h1>Gallery </h1>
+                    <h1>Contact Us</h1>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Page Title -->
 
-
-    <!-- Star Portfolio
+    <!-- Start Contact Area
     ============================================= -->
-    <div class="portfolio-area default-padding">
+    <div class="contact-area default-padding-top bottom-half">
         <div class="container">
-            <div class="gallery-items-area">
+            <div class="contact-items">
                 <div class="row">
-                    <div class="col-md-12 gallery-content">
-                        <div class="mix-item-menu text-center">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".development">Software</button>
-                            <button data-filter=".consulting">Hardware</button>
+                    <div class="col-md-6 address">
+                        <div class="address-items text-center text-light" style="background-image: url(http://drive.google.com/uc?export=view&id=1n-PX2Dkg-thBeXl-xE0OCaGDhp69LSLu);">
+                            <ul class="info">
+                                <li>
+                                    <div class="icon"><i class="flaticon-location"></i></div> 
+                                    <h4>Location</h4>
+                                    <span>UENR, Sunyani - Brong Ahafo Region, Ghana</span>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="flaticon-call-center"></i></div>
+                                    <h4>Phone</h4>
+                                    <span>+233 549300250 </span>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="flaticon-email"></i> </div>
+                                    <h4>Email</h4>
+                                    <span>uenrroboticsclub.innovate@gmail.com</span>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- End Mixitup Nav-->
-
-                        <div class="row magnific-mix-gallery masonary">
-                            <div id="portfolio-grid" class="gallery-items col-2">
-                                <!-- Single Item -->
-                                <div class="pf-item development capital">
-                                    <div class="effect-box">
-                                        <div class="thumb">
-                                            <img src="https://drive.google.com/uc?export=view&id=17UhmhfQaDdvcrWQABPB-fwOG8Qj4tOhb" alt="thumb">
-                                        </div>
-                                        <div class="info">
-                                            <div class="left">
-                                                <h4><a href="#">Marketing Plan</a></h4>
-                                                <p>business, finance</p>
-                                            </div>
-                                            <div class="right">
-                                                <a href="assets/img/800x600.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
+                    </div>
+                    <div class="col-md-6 form-box">
+                        <h2>Let's talk about your idea</h2>
+                        <p>
+                            Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy. 
+                        </p>
+                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <span class="alert-error"></span>
                                     </div>
                                 </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting branding">
-                                    <div class="effect-box">
-                                        <div class="thumb">
-                                            <img src="https://drive.google.com/uc?export=view&id=1t8ZZU-III4dKj5eYd-Ui1Y5w0ITWLpkG" alt="thumb">
-                                        </div>
-                                        <div class="info">
-                                            <div class="left">
-                                                <h4><a href="#">Business Analysis</a></h4>
-                                                <p>business, finance</p>
-                                            </div>
-                                            <div class="right">
-                                               <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting finance">
-                                    <div class="effect-box">
-                                        <div class="thumb">
-                                            <img src="https://drive.google.com/uc?export=view&id=1lfngnUA-LDER8ut5rBSRls5EgWDrKpbf" alt="thumb">
-                                        </div>
-                                        <div class="info">
-                                            <div class="left">
-                                                <h4><a href="#">Profit Analysis</a></h4>
-                                                <p>business, finance</p>
-                                            </div>
-                                            <div class="right">
-                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item finance">
-                                    <div class="effect-box">
-                                        <div class="thumb">
-                                            <img src="https://drive.google.com/uc?export=view&id=1jZORCVQ6VJcOPy1MlbBAp_-fzxuFST7r" alt="thumb">
-                                        </div>
-                                        <div class="info">
-                                            <div class="left">
-                                                <h4><a href="#">Global Business</a></h4>
-                                                <p>business, finance</p>
-                                            </div>
-                                            <div class="right">
-                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item capital development">
-                                    <div class="effect-box">
-                                        <div class="thumb">
-                                            <img src="https://drive.google.com/uc?export=view&id=1N7UD3uPJCombynj-AuVkE8T8IJZ1g2oW" alt="thumb">
-                                        </div>
-                                        <div class="info">
-                                            <div class="left">
-                                                <h4><a href="#">Success Report</a></h4>
-                                                <p>business, finance</p>
-                                            </div>
-                                            <div class="right">
-                                                <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting branding">
-                                    <div class="effect-box">
-                                        <div class="thumb">
-                                            <img src="https://drive.google.com/uc?export=view&id=1TpUg04QZPWqDay1unl0knu7zrJQ4aZRp" alt="thumb">
-                                        </div>
-                                        <div class="info">
-                                            <div class="left">
-                                                <h4><a href="#">Marketing Plan</a></h4>
-                                                <p>business, finance</p>
-                                            </div>
-                                            <div class="right">
-                                                <a href="assets/img/800x600.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Item -->
                             </div>
-                        </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group comments">
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <button type="submit" name="submit" id="submit">
+                                        Send Message <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-md-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Portfolio -->
-
-    <!-- Star Footer
+    <!-- End Contact Area -->
+    <div  style="height: 250px;" >
+    </div>
+     <!-- Star Footer
     ============================================= -->
     <footer class="bg-dark">
         <div class="container">

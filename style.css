@@ -3361,12 +3361,12 @@ body,
 }
 
 .modern-services-area .item:hover::after,
-.modern-services-area .single-item:first-child .item::after {
+ .modern-services-area .single-item:first-child .item::after  { 
     opacity: 1;
 }
 
-.modern-services-area .item:hover::before,
-.modern-services-area .single-item:first-child .item::before {
+.modern-services-area .item:hover::before
+/* .modern-services-area .single-item:first-child .item::before */{
     opacity: 1;
     height: 100%;
 }
