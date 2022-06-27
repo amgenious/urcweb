@@ -28,7 +28,9 @@
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/animate.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style2.css" rel="stylesheet">
+    
     <!-- ========== End Stylesheet ========== -->
 
     <!-- ========== Google Fonts ========== -->
@@ -37,13 +39,12 @@
 
 </head>
 <style>
-    .join:hover{
-        background-color: white;
-        color: red;
+    .attr-nav .join:hover{
+        width: 92px;
+        height: 45px;
+        border: 2px solid rgb(255, 217, 0);
     }
-    .join{
-        box-shadow: 3px 2px  rgb(234, 61, 61); 
-    }
+    
 </style>
 
 <body>
@@ -55,11 +56,12 @@
     <!-- Start Header Top 
     ============================================= -->
     <div class="top-bar-area">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 logo">
                     <a href="index.html">
-                        <img src="assets/img/urc.png" class="logo" alt="Logo">
+                        <img src="assets/img/urc_logo.png">
+                        <img src="assets/img/urc_logo1.png" class="logo" alt="Logo">
                     </a>
                 </div>
                 <div class="col-md-9 address-info text-right">
@@ -67,28 +69,32 @@
                         <ul>
                             <li>
                                 <div class="icon">
-                                    <i class="flaticon-email"></i>
+                                    <i class="flaticon-email" style="color: rgb(21, 21, 112);"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Email</span> uenrroboticsclub.innovate@gmail.com
+                                    <span style="color: rgb(21, 21, 112);">Email</span> <span style="color: rgb(21, 21, 112);">uenrroboticsclub.innovate@gmail.com</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon">
-                                    <i class="flaticon-call-center"></i>
+                                    <i class="flaticon-call-center" style="color: rgb(21, 21, 112);"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Phone</span> +233 549300250
+                                    <span style="color: rgb(21, 21, 112);">Phone</span> <span style="color: rgb(21, 21, 112);">+233 549300250</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon">
-                                    <i class="flaticon-countdown"></i>
+                                    <i class="flaticon-countdown" style="color: rgb(21, 21, 112);"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Meeting Days</span> Mon & Fri : 19:00 - 21:00
+                                    <span style="color: rgb(21, 21, 112);">Meeting Days</span> <span style="color: rgb(21, 21, 112);">Mon & Fri : 19:00 - 21:00</span>
                                 </div> 
                             </li>
+                             <li><a href="https://facebook.com"><i class="fab fa-facebook-f" style="color: gray;"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fab fa-twitter" style="color: gray;"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fab fa-instagram" style="color: gray;"></i></a></li>
+                            <li><a href="https://linkedin"><i class="fab fa-linkedin-in" style="color: gray;"></i></a></li> 
                         </ul>
                     </div>
                 </div>
@@ -104,18 +110,12 @@
         <!-- Start Navigation -->
         <nav class="navbar navbar-default attr-border active-border logo-less small-pad navbar-sticky bootsnav">
 
-            <div class="container">
+            <div class="container-fluid">
 
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
-                    <ul>
-                        <li ><a class="join" href="register.html" style="width: 90px; height: 40px; background-color: white; border-radius: 20px; border: 1px solid red; text-align: center;">Join Us</a></li>
-                    </ul>
-                    <ul class="social">
-                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                    <ul >
+                        <li><a class="join" href="register.html" style="width: 90px; height: 40px; background: rgba(21, 21, 112); border-radius: 20px; color: white; text-align: center; ">Join Us</a></li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -126,7 +126,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/urc.png" class="logo" alt="Logo">
+                        <img src="assets/img/urc_logo1.png" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -134,21 +134,20 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li>
-                            <a href="index.html" class="" >Home</a>
-                            
+                        <li class="dropdown">
+                            <a href="index.html">Home</a>
                         </li>
+                        <li >
+                            <a href="gallery.html"  class=" active" style="color: rgba(21, 21, 112);">Gallery</a>
+                        </li>
+                       
                         <li><a href="about.html">About</a></li>
                         <li>
-                            <a href="gallery.html" class="active">Gallery</a>
+                            <a href="blog.html" >Projects</a>
                         </li>
                         <li>
-                            <a href="blog.html"  >Projects</a>
+                            <a href="contact.html">contact</a>
                         </li>
-                        <li>
-                            <a href="contact.html"  >Contact</a>
-                        </li>
-                        
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -174,7 +173,108 @@
 
     <!-- Star Portfolio
     ============================================= -->
-    <div class="portfolio-area default-padding">
+<div class="container-fluid imgs-container">
+    <p><b>STEM FESTIVAL</b></p>
+    <div class=" imgs">
+        <div class="">
+            <img src="https://drive.google.com/uc?export=view&id=1HsdFc-2mXEiolaPo070e42kuyrq3Ogmm">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+    </div>
+    <br>
+    <p><b>GLOBAL MONITORING FOR ENVIRONMENT & SECURITY INCUBATION CHALLENGE 2021 </b></p>
+    <div class=" imgs">
+        <div class="">
+            <img src="https://drive.google.com/uc?export=view&id=1eULXO8IfY7_5ifjVhO9eMTHGfwrOnrYc">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1j0BTU0AijK3vmVeE-aJvAKu8I0Gf8NOd">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1ANE0NoQ2oFm8lzk2l1cPg3MaFj2pJ1kb">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1AA7auGORpGriyVEMociWQcEpkYKqiQaK">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+    </div>
+    <br>
+    <p><b>NATIONAL ENERGY QUIZ & INNOVATION CHALLENGE </b></p>
+    <div class=" imgs">
+        <div class="">
+            <img src="https://drive.google.com/uc?export=view&id=19uRyBdK4bGIl5L_TXsXZhkUrcj3WpLsI" alt="thumb">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=19uasHdxoCUBTL1pgZjJ_-bjIBAwKglcM">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+        <div class=" ">
+            <img src="assets/img/bg_6.jpg">
+        </div>
+    </div>
+    <br>
+    <p><b>GENERAL MEETING  </b></p>
+    <div class=" imgs">
+        <div class="">
+            <img src="https://drive.google.com/uc?export=view&id=1wMvVpWhjwDc_N9jzEa3M0GOllgoQZ9lx" alt="thumb">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=14YkjTDA2KH1UuDzeealG3Tb00ycgQDfy">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1cevQckgvP8gP_F1M1Aq2bGhD33FBHRM0">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=19A5_6ZV4GvLiPxzf4g2fJGsRqWWgG93e">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1imCzbyn7-hz9OxqnBrVkm6H0ayNVUHA6">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1ru7PfW1cIASffqOo1TF9lB_kCXWbV9Ib">
+        </div>
+        <div class=" ">
+            <img src="https://drive.google.com/uc?export=view&id=1T3mV1HbfnsS2rJrCNHLD1SBRLP__QAlb">
+        </div>
+    </div>
+</div>
+    <!-- <div class="portfolio-area default-padding">
         <div class="container">
             <div class="gallery-items-area">
                 <div class="row">
@@ -183,13 +283,13 @@
                             <button class="active" data-filter="*">All</button>
                             <button data-filter=".development">Software</button>
                             <button data-filter=".consulting">Hardware</button>
-                        </div>
+                        </div> -->
                         <!-- End Mixitup Nav-->
 
-                        <div class="row magnific-mix-gallery masonary">
-                            <div id="portfolio-grid" class="gallery-items col-2">
+                        <!-- <div class="row magnific-mix-gallery masonary">
+                            <div id="portfolio-grid" class="gallery-items col-2"> -->
                                 <!-- Single Item -->
-                                <div class="pf-item development capital">
+                                <!-- <div class="pf-item development capital">
                                     <div class="effect-box">
                                         <div class="thumb">
                                             <img src="https://drive.google.com/uc?export=view&id=17UhmhfQaDdvcrWQABPB-fwOG8Qj4tOhb" alt="thumb">
@@ -204,10 +304,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
-                                <div class="pf-item consulting branding">
+                                <!-- <div class="pf-item consulting branding">
                                     <div class="effect-box">
                                         <div class="thumb">
                                             <img src="https://drive.google.com/uc?export=view&id=1t8ZZU-III4dKj5eYd-Ui1Y5w0ITWLpkG" alt="thumb">
@@ -222,10 +322,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
-                                <div class="pf-item consulting finance">
+                                <!-- <div class="pf-item consulting finance">
                                     <div class="effect-box">
                                         <div class="thumb">
                                             <img src="https://drive.google.com/uc?export=view&id=1lfngnUA-LDER8ut5rBSRls5EgWDrKpbf" alt="thumb">
@@ -240,10 +340,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
-                                <div class="pf-item finance">
+                                <!-- <div class="pf-item finance">
                                     <div class="effect-box">
                                         <div class="thumb">
                                             <img src="https://drive.google.com/uc?export=view&id=1jZORCVQ6VJcOPy1MlbBAp_-fzxuFST7r" alt="thumb">
@@ -258,10 +358,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
-                                <div class="pf-item capital development">
+                                <!-- <div class="pf-item capital development">
                                     <div class="effect-box">
                                         <div class="thumb">
                                             <img src="https://drive.google.com/uc?export=view&id=1N7UD3uPJCombynj-AuVkE8T8IJZ1g2oW" alt="thumb">
@@ -276,10 +376,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
-                                <div class="pf-item consulting branding">
+                                <!-- <div class="pf-item consulting branding">
                                     <div class="effect-box">
                                         <div class="thumb">
                                             <img src="https://drive.google.com/uc?export=view&id=1TpUg04QZPWqDay1unl0knu7zrJQ4aZRp" alt="thumb">
@@ -294,15 +394,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Single Item -->
-                            </div>
+                            <!-- </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Portfolio -->
 
     <!-- Star Footer
@@ -439,6 +539,6 @@
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="app.js"></script>
-
+    
 </body>
 </html>

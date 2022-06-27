@@ -1,0 +1,29 @@
+.imgs-container{
+    overflow-x: auto;
+}
+.imgs{
+    display: grid !important;
+    grid-template-columns:repeat(5, auto) !important;
+    grid-gap: 10px !important;
+}
+@media only screen and (max-width: 800px) {
+    .imgs{
+        grid-template-columns: repeat(3, auto) !important;
+        grid-gap: 5px !important;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .imgs{
+        grid-gap: 1px !important;
+    }
+}
+.imgs div{
+    width: 100% !important;
+    margin: auto !important;
+    overflow: hidden !important;
+}
+.imgs img{
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
