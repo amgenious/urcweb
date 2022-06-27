@@ -13,7 +13,7 @@
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicn.png" type="image/x-icon">
- 
+
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -28,15 +28,9 @@
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/animate.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="assets/css/animate.css" rel = "stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet"> 
+    
     <!-- ========== End Stylesheet ========== -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
-    <![endif]-->
 
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -44,13 +38,12 @@
 
 </head>
 <style>
-    .join:hover{
-        background-color: white;
-        color: red;
+    .attr-nav .join:hover{
+        width: 92px;
+        height: 45px;
+        border: 2px solid rgb(255, 217, 0);
     }
-    .join{
-        box-shadow: 3px 2px  rgb(234, 61, 61); 
-    }
+    
 </style>
 
 <body>
@@ -62,11 +55,12 @@
     <!-- Start Header Top 
     ============================================= -->
     <div class="top-bar-area">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 logo">
                     <a href="index.html">
-                        <img src="assets/img/urc.png" class="logo" alt="Logo">
+                        <img src="assets/img/urc_logo.png">
+                        <img src="assets/img/urc_logo1.png" class="logo" alt="Logo">
                     </a>
                 </div>
                 <div class="col-md-9 address-info text-right">
@@ -74,28 +68,32 @@
                         <ul>
                             <li>
                                 <div class="icon">
-                                    <i class="flaticon-email"></i>
+                                    <i class="flaticon-email" style="color: rgb(21, 21, 112);"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Email</span> uenrroboticsclub.innovate@gmail.com
+                                    <span style="color: rgb(21, 21, 112);">Email</span> <span style="color: rgb(21, 21, 112);">uenrroboticsclub.innovate@gmail.com</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon">
-                                    <i class="flaticon-call-center"></i>
+                                    <i class="flaticon-call-center" style="color: rgb(21, 21, 112);"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Phone</span> +233 549300250
+                                    <span style="color: rgb(21, 21, 112);">Phone</span> <span style="color: rgb(21, 21, 112);">+233 549300250</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon">
-                                    <i class="flaticon-countdown"></i>
+                                    <i class="flaticon-countdown" style="color: rgb(21, 21, 112);"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Meeting Days</span> Mon & Fri : 19:00 - 21:00
+                                    <span style="color: rgb(21, 21, 112);">Meeting Days</span> <span style="color: rgb(21, 21, 112);">Mon & Fri : 19:00 - 21:00</span>
                                 </div> 
                             </li>
+                             <li><a href="https://facebook.com"><i class="fab fa-facebook-f" style="color: gray;"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fab fa-twitter" style="color: gray;"></i></a></li>
+                            <li><a href="https://instagram.com"><i class="fab fa-instagram" style="color: gray;"></i></a></li>
+                            <li><a href="https://linkedin"><i class="fab fa-linkedin-in" style="color: gray;"></i></a></li> 
                         </ul>
                     </div>
                 </div>
@@ -111,22 +109,12 @@
         <!-- Start Navigation -->
         <nav class="navbar navbar-default attr-border active-border logo-less small-pad navbar-sticky bootsnav">
 
-            <!-- Start Top Search -->
-            
-            <!-- End Top Search -->
-
-            <div class="container">
+            <div class="container-fluid">
 
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
-                    <ul>
-                        <li ><a class="join" href="register.html" style="width: 90px; height: 40px; background-color: white; border-radius: 20px; border: 1px solid red; text-align: center; ">Join Us</a></li>
-                    </ul>
-                    <ul class="social">
-                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <ul >
+                        <li><a class="join" href="register.html" style="width: 90px; height: 40px; background: rgba(21, 21, 112); border-radius: 20px; color: white; text-align: center; ">Join Us</a></li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -137,7 +125,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/urc.png" class="logo" alt="Logo">
+                        <img src="assets/img/urc_logo1.png" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -145,20 +133,19 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li>
+                        <li class="dropdown">
                             <a href="index.html">Home</a>
                         </li>
+                        <li >
+                            <a href="gallery.html"  >Gallery</a>
+                        </li>
+                       
+                        <li><a href="about.html" >About</a></li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="blog.html" >Projects</a>
                         </li>
                         <li>
-                            <a href="gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">Project</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="active">contact</a>
+                            <a href="contact.html"  class=" active" style="color: rgba(21, 21, 112);">contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -168,6 +155,7 @@
 
     </header>
     <!-- End Header -->
+
 
     <!-- Start Page Title 
     ============================================= -->
